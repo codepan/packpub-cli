@@ -1,0 +1,18 @@
+{
+  "name": "@codepan/packpub-cli",
+  "version": "0.0.1-1",
+  "description": "一个自动发布npm包的命令行工具",
+  "bin": {
+    "packpub": "bin/index.js"
+  },
+  "keywords": [],
+  "author": "codepan",
+  "license": "ISC",
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.2.0",
+    "inquirer": "^7.3.3",
+    "log-symbols": "^4.0.0",
+    "shelljs": "^0.8.4"
+  }
+}
