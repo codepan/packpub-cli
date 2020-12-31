@@ -27,6 +27,8 @@ packpub -h|--help
 
 ```shell
 packpub publish|p
+# 指定发布的源
+packpub publish --source npm|cnpm|其它
 ```
 
 **查看npm包版本号简短解释说明**

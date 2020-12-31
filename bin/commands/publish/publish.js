@@ -1,6 +1,6 @@
 const inquirer = require('inquirer')
 const shell = require('shelljs')
-module.exports = ({ useCurrentVersion, version }) => {
+module.exports = ({ useCurrentVersion, version }, source = 'npm') => {
   return new Promise((resolve, reject) => {
     shell.exec(`npm version ${version} ${useCurrentVersion ? '--allow-same-version' : ''}`, (code, stdout, stderr) => {
       if (code !== 0 || stderr) {
@@ -15,7 +15,7 @@ module.exports = ({ useCurrentVersion, version }) => {
         if (!couldPublish){
           reject()
         } else {
-          shell.exec('npm publish --access public', (code, stdout, stderr) => {
+          shell.exec(`${source} publish --access public`, (code, stdout, stderr) => {
             if (code !== 0) {
               return reject()
             }
