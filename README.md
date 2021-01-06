@@ -1,5 +1,5 @@
 # 介绍
-该脚手架可以帮助你自动发布npm包到npm仓库，同时也可帮助你自动提交代码，以便npm version命令可以执行成功
+该脚手架可以帮助你自动发布npm包到npm仓库，同时也可帮助你自动提交代码
 # 安装
 ```shell
 yarn global add @codepan/packpub-cli
